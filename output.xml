@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.6 on win32)" generated="2026-07-24T20:04:51.640975" rpa="false" schemaversion="5">
+<suite id="s1" name="Robotframework" source="C:\Users\Dell\PycharmProjects\Robotframework">
+<suite id="s1-s1" name="Testdemo1" source="C:\Users\Dell\PycharmProjects\Robotframework\testdemo1.robot">
+<test id="s1-s1-t1" name="validate successful login" line="6">
+<kw name="open the browser with the web url">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-07-24T20:04:53.607940" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-07-24T20:04:53.605269" elapsed="5.204041"/>
+</kw>
+<status status="PASS" start="2026-07-24T20:04:53.599259" elapsed="5.210902"/>
+</kw>
+<kw name="fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-07-24T20:04:58.814297" level="INFO">Typing text 'abc' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>abc</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-24T20:04:58.813138" elapsed="0.156919"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-07-24T20:04:58.973935" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2026-07-24T20:04:59.022101" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>txt</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-24T20:04:58.972112" elapsed="0.124256"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-07-24T20:04:59.099701" level="INFO">Clicking button 'signInBtn'.</msg>
+<arg>signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-24T20:04:59.098299" elapsed="0.141356"/>
+</kw>
+<status status="PASS" start="2026-07-24T20:04:58.811630" elapsed="0.428868"/>
+</kw>
+<kw name="wait until it checks and display error message">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.alert</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-07-24T20:04:59.245311" elapsed="2.117361"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-07-24T20:05:01.405524" level="INFO">${result} = Incorrect username/password.</msg>
+<var>${result}</var>
+<arg>css:.alert</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-07-24T20:05:01.365736" elapsed="0.040090"/>
+</kw>
+<status status="PASS" start="2026-07-24T20:04:59.242403" elapsed="2.164233"/>
+</kw>
+<status status="PASS" start="2026-07-24T20:04:53.592987" elapsed="7.815696"/>
+</test>
+<doc>To validate login form</doc>
+<status status="PASS" start="2026-07-24T20:04:51.821827" elapsed="9.592651"/>
+</suite>
+<status status="PASS" start="2026-07-24T20:04:51.650019" elapsed="9.771179"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robotframework" id="s1" pass="1" fail="0" skip="0">Robotframework</stat>
+<stat name="Testdemo1" id="s1-s1" pass="1" fail="0" skip="0">Robotframework.Testdemo1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
