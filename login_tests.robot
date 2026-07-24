@@ -19,6 +19,7 @@ fill the login form
     Click Button    signInBtn
 wait until it checks and display error message    
     Wait Until Element Is Visible    css:.alert
-    ${result}=    Get Text    css:.alert
+   
 verify error message is correct    
+    ${result}=    Get Text    css:.alert
       ${result}    Should Be Equal As Strings    Incorrect username/password.
