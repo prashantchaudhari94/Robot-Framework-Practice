@@ -1,0 +1,31 @@
+robot-framework-automation-framework/
+│
+├── tests/
+│   ├── login/
+│   │   └── login_tests.robot
+│   │
+│   └── regression/
+│       └── regression_tests.robot
+│
+├── resources/
+│   ├── keywords/
+│   │   └── common_keywords.robot
+│   │
+│   ├── locators/
+│   │   └── login_locators.robot
+│   │
+│   └── variables/
+│       └── test_variables.robot
+│
+├── libraries/
+│   └── CustomLibrary.py
+│
+├── testdata/
+│
+├── requirements.txt
+│
+├── .gitignore
+│
+├── Jenkinsfile
+│
+└── README.md
