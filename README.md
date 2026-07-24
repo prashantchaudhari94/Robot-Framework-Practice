@@ -17,9 +17,9 @@ I am using this repository to practice and improve my skills in:
 ```text
 robot-framework-practice/
 │
-├── 01_Basics/
-├── 02_Selenium/
-├── 03_Web_Automation/
+├── 01_Login application using selenium library/
+├── 02_Variables/
+├── 03_Resource files/
 ├── 04_API_Automation/
 ├── 05_Custom_Python_Libraries/
 ├── 06_Test_Data/
